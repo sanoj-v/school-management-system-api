@@ -1,5 +1,5 @@
 ﻿using System.Text;
-using DotNetCoreAPI.Middleware;
+using SchoolManagementSystemAPI.Middleware;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -8,10 +8,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using System.Net;
-using DotNetCoreAPI.Classes;
+using SchoolManagementSystemAPI.Classes;
 using Microsoft.AspNetCore.Http;
 
-namespace DotNetCoreAPI
+namespace SchoolManagementSystemAPI
 {
     public class Startup
     {

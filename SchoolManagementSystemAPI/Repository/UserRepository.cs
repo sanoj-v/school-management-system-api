@@ -1,4 +1,4 @@
-﻿using DotNetCoreAPI.Models;
+﻿using SchoolManagementSystemAPI.Models;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace DotNetCoreAPI.Repository
+namespace SchoolManagementSystemAPI.Repository
 {
     public class UserRepository
     {

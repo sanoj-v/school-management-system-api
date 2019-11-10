@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 
-namespace DotNetCoreAPI.Controllers
+namespace SchoolManagementSystemAPI.Controllers
 {
     [Route("[controller]/[action]")]
     [ApiController]

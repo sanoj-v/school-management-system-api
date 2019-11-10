@@ -1,5 +1,5 @@
-﻿using DotNetCoreAPI.Classes;
-using DotNetCoreAPI.Models;
+﻿using SchoolManagementSystemAPI.Classes;
+using SchoolManagementSystemAPI.Models;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using System;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace DotNetCoreAPI.Middleware
+namespace SchoolManagementSystemAPI.Middleware
 {
     public class CustomExceptionMiddleware
     {

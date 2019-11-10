@@ -2,7 +2,7 @@
 using System;
 using System.Net;
 
-namespace DotNetCoreAPI.Classes
+namespace SchoolManagementSystemAPI.Classes
 {
     public class HttpStatusCodeException : Exception
     {

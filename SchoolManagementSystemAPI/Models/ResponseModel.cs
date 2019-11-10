@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace DotNetCoreAPI.Models
+namespace SchoolManagementSystemAPI.Models
 {
     public class ResponseModel
     {

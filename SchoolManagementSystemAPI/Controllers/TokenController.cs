@@ -5,14 +5,14 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using DotNetCoreAPI.Models;
-using DotNetCoreAPI.Repository;
+using SchoolManagementSystemAPI.Models;
+using SchoolManagementSystemAPI.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
-namespace DotNetCoreAPI.Controllers
+namespace SchoolManagementSystemAPI.Controllers
 {
     [Route("[controller]/[action]")]
     public class TokenController : Controller
