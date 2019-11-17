@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SchoolManagementSystemAPI.Models
 {
-    public class UserModel
+    public class UserModel: UserExtend
     {
         public string Id { get; set; }
         public string Name { get; set; }

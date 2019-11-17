@@ -44,7 +44,6 @@ namespace SchoolManagementSystemAPI
                 };
             });
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            //services.RegisterServices();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
