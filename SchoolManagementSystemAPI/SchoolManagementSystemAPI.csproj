@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Documents\Employees\" />
+    <Folder Include="Documents\Teachers\" />
     <Folder Include="Documents\Students\" />
     <Folder Include="Filters\" />
     <Folder Include="wwwroot\" />

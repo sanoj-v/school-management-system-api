@@ -75,7 +75,7 @@ namespace SchoolManagementSystemAPI.Controllers
                 UserModel myDetails = JsonConvert.DeserializeObject<UserModel>(myData);
                 if (Request.Form.Files.Count > 0)
                 {
-                    //fileId = CommonUtility.SaveFileToFolder(Request.Form.Files[0]);
+                    fileId = CommonUtility.SaveFileToFolder(Request.Form.Files[0], Folder.Students, UserId);
                 }
                 myDetails.CreatedBy = UserId;
 

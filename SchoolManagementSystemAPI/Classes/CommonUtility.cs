@@ -1,22 +1,26 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace SchoolManagementSystemAPI.Classes
 {
     public class CommonUtility
     {
-        public static string SaveFileToFolder(IFormFile myFile)
+        public static string SaveFileToFolder(IFormFile myFile, string DirectoryName, string Id = null)
         {
             string guid = Guid.NewGuid().ToString().Replace("-", "");
             var fileName = $"{guid}{Path.GetExtension(myFile.FileName)}";
-            var folderName = Folder.Students;
+            string folderName = $"{DirectoryName}";
+            if (Id != null)
+            {
+                folderName = $"{DirectoryName}//{Id}";
+            }
             var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
             var fullPath = Path.Combine(pathToSave, fileName);
-            var dbPath = Path.Combine(folderName, fileName);
+            if (!Directory.Exists(pathToSave))
+            {
+                Directory.CreateDirectory(pathToSave);
+            }
             using (var stream = new FileStream(fullPath, FileMode.Create))
             {
                 myFile.CopyTo(stream);
